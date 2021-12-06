@@ -8,9 +8,9 @@ import math
 import mediapipe as mp
 
 parser = ArgumentParser()
-parser.add_argument("-v", "--video", help="Video file to run")
+parser.add_argument("-v", "--video", action='store_true', help="Video file to run")
 parser.add_argument("-d", "--directory", help="Directory to run")
-parser.add_argument("-o", "--output", default='output', help="Video file to run")
+parser.add_argument("-o", "--output", default='output', help="Output directory")
 
 
 class FaceDetector:
